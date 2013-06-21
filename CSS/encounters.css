@@ -1,0 +1,620 @@
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+
+body {
+	margin: 0px;
+	background-image: url(../images/main_bg.jpeg);
+}
+#encounters {
+	width: 100%;
+	margin-bottom: 100px;
+}
+#cgpatientdashboardheader {
+	width: 100%;
+	height: 85px;
+	background-color: #FAF0C2;
+	margin: 0;
+}
+#cgpatientdashboardsnapshot {
+	width: 100%;
+	height: 60px;
+	/* background-color: #DDD; */
+}
+#cgpatientdashboardnav {
+	
+}
+#cgpatientdashboardnavgroup {
+
+}
+  .cgpdblink {
+		/* display: block; */
+		text-decoration: none;
+		float: left;
+		margin: 0 5px;
+		padding: 3px 15px;
+		color: #FFF;
+		cursor: pointer;
+		
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-topright: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		
+		background: #6DB3F2;
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZkYjNmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzU0YTNlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzM2OTBmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTY5ZGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top, #6DB3F2 0%, #54A3EE 50%, #3690F0 51%, #1E69DE 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6DB3F2), color-stop(50%,#54A3EE), color-stop(51%,#3690F0), color-stop(100%,#1E69DE));
+		background: -webkit-linear-gradient(top, #6DB3F2 0%,#54A3EE 50%,#3690F0 51%,#1E69DE 100%);
+		background: -o-linear-gradient(top, #6DB3F2 0%,#54A3EE 50%,#3690F0 51%,#1E69DE 100%);
+		background: -ms-linear-gradient(top, #6DB3F2 0%,#54A3EE 50%,#3690F0 51%,#1E69DE 100%);
+		background: linear-gradient(top, #6DB3F2 0%,#54A3EE 50%,#3690F0 51%,#1E69DE 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 );
+	}
+		.cgpdblink span {
+			border: solid 1px #D83722;
+			border-bottom: solid 1px #C0311E;
+			border-top: solid 1px #E23923;
+			-webkit-box-shadow: 0 1px 0 rgba(0, 39, 121, .77);
+			padding: 0 2px;
+			/* display: block; */
+			
+			background-color: #F03D25;
+			
+			-webkit-border-radius: 2px;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+			font-size: 0.6em;
+			
+			z-index: 101;
+			position: absolute;
+			
+			top: 55px;
+			margin-left: -13px;
+		}
+#cgpatientdashboardcontent {
+	width: 100%;
+}
+#cgpatientdashboardsubnavwrapper {
+	/* z-index: 4; */
+	width: 233px;
+	/* width: 19%; */
+	min-width: 233px;
+	float: left;
+	margin-top: 10px;
+}
+#cgpatientdashboardsubnavbtn {
+	width: 30px;
+	height: 40px;
+	background-image: url(arrowout.png);
+	background-position-x: -10px;
+	float: left;
+	margin-top: 10px;
+}
+#cgpatientdashboardsubnav {
+	width: 200px;
+	height: auto;
+	background: #DDD;
+	border: 1px solid #AAA;
+	float: left;
+	display: none;
+	
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+	#backwardadditembtn {
+		height: 40px;
+		width: 200px;
+	}
+		.backwardbtn {
+			height: 38px;
+			width: 98px;
+			float: left;
+			border-right: 2px solid #AAA;
+			font-weight: bold;
+			text-align: center;
+			cursor: pointer;
+			
+			background: #d3d3d3; /* Old browsers */
+			background: -moz-linear-gradient(top,  #d3d3d3 0%, #dbdbdb 50%, #d1d1d1 51%, #c9c9c9 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d3d3), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#c9c9c9)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* IE10+ */
+			background: linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', endColorstr='#c9c9c9',GradientType=0 ); /* IE6-9 */
+		}
+		.additembtn {
+			height: 38px;
+			width: 98px;
+			background: #8fc400;
+			float: right;
+			border-left: 2px solid #AAA;
+			font-weight: bold;
+			text-align: center;
+			cursor: pointer;
+			
+			
+			background: #d3d3d3; /* Old browsers */
+			background: -moz-linear-gradient(top,  #d3d3d3 0%, #dbdbdb 50%, #d1d1d1 51%, #c9c9c9 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d3d3), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#c9c9c9)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* IE10+ */
+			background: linear-gradient(top,  #d3d3d3 0%,#dbdbdb 50%,#d1d1d1 51%,#c9c9c9 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', endColorstr='#c9c9c9',GradientType=0 ); /* IE6-9 */
+			
+			-webkit-border-top-right-radius: 10px;
+			-moz-border-radius-topright: 10px;
+			border-top-right-radius: 10px;
+
+		}
+		#cgpatientdashboardsubnavgroup {
+			margin: 0;
+		}
+		ul#cgpatientdashboardsubnavgroup li {
+			/* display: block; */
+			list-style: none;
+		}
+		li.cgpdbsnlink a {
+			text-decoration: none;
+			padding: 10px;
+			text-align: left;
+			background: red;
+			font-size: 1em;
+			color: #333;
+			font-weight: bold;
+			border-bottom: 1px solid #D4D4D4;
+			display: block;
+			cursor: pointer;
+			
+			background: #ffffff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+			background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+		}
+#cgpatientdashboard {
+	width: auto;
+	/* width: 80%; */
+	min-height: 500px;
+	float: left;
+	
+}
+#cgpatientdashboarditem {
+	border: 2px solid #DDD;
+	height: 200px;
+	width: 250px;
+	float: left;
+	margin: 10px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmVmZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #FEFFFF 0%, #E6EFF4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFFFF), color-stop(100%,#E6EFF4));
+	background: -webkit-linear-gradient(top, #FEFFFF 0%,#E6EFF4 100%);
+	background: -o-linear-gradient(top, #FEFFFF 0%,#E6EFF4 100%);
+	background: -ms-linear-gradient(top, #FEFFFF 0%,#E6EFF4 100%);
+	background: linear-gradient(top, #FEFFFF 0%,#E6EFF4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#e6eff4',GradientType=0 );
+}
+	div[id^="cgpatientdashboarditemencounter_"] {
+	
+		/* height: 205px; */
+		height: auto;
+		width: 250px;
+		float: left;
+		margin: 5px;
+		
+		
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		
+/*
+		-moz-box-shadow: 0 0 5px #888;
+		-webkit-box-shadow: 0 0 5px#888;
+		box-shadow: 0 0 5px #888;
+*/
+	}
+		.cgpatientdashboarditemencounterlocked {
+			border: 2px solid #D9D9D9;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		
+			background-image: url(../images/bg_texture_2.jpg);
+		}
+		.cgpatientdashboarditemencounter {
+			border: 2px solid #6E6E6E;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		
+			background: #606c88; /* Old browsers */
+			background: -moz-linear-gradient(top,  #606c88 0%, #3f4c6b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#606c88), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #606c88 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #606c88 0%,#3f4c6b 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #606c88 0%,#3f4c6b 100%); /* IE10+ */
+			background: linear-gradient(top,  #606c88 0%,#3f4c6b 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+			
+			  -moz-box-shadow:    0px 0px 10px #1A91FF;
+			  -webkit-box-shadow: 0px 0px 10px #1A91FF;
+			  box-shadow:         0px 0px 10px #1A91FF;
+		}
+.cgpatientdashboarditemheader {
+	height: 16px;
+	width: 234px;
+	padding: 8px;
+	border-bottom: 2px solid #DDD;
+	
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+
+	background-image: url(../images/metalBoxGade.png);
+	background-repeat: repeat-x;
+}
+
+/*
+.cgpatientdashboarditemrefresh {
+	float: right;
+	background: url(Free-Medical-Icons-Set/32x32/refresh.png);
+	background-repeat: no-repeat;
+	padding: 15px 20px;
+	
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+*/
+
+.cgpatientdashboarditemheaderdate {
+	float: left;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 8px;
+	width: 100%;
+}
+.cgpatientdashboarditemheader div {
+	float: left;
+}
+	.encounterbillinfo {
+		color: #ed7f2d;
+		font-size: 0.8em;
+		margin-left: 10px;
+	}
+	.formencounterprovider {
+		font-size: 0.8em;
+		margin-left: 10px;
+	}
+	.cgpatientencounterformitemactionsreason {
+		font-size: 0.8em;
+		color: #595959;
+		height: 24px;
+		margin: 0px;
+		overflow-y: scroll;
+		background: white;
+	}
+		.cgpatientencounterformitemactionsform {
+			font-size: 0.8em;
+			color: #595959;
+			height: 24px;
+			margin-top: 2px;
+		}
+		span.encounterreason {
+			color: gray;
+		}
+		div.visitdate {
+			font-weight: bold;
+		}
+		.actionsdrop {
+			background-image: url(../images/settings.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 1.4em !important;
+			z-index: 1;
+			position: static;
+			width: 20px;
+			height: 20px;
+			margin-left: 225px;
+			margin-top: -35px;
+			padding-bottom: 15px;
+		}
+		div[class^="viewvisit_"] {
+			background-image: url(../images/settings.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 1.4em !important;
+		    padding: 10px 11px;
+			margin-left: 83px;
+			cursor: pointer;
+			z-index: 1;
+		}
+		div[class^="actionbtns"] {
+			background: #FFF;
+			height: 0px;
+			-webkit-box-shadow: inset 0px 0.9px 6px 0px black;
+			box-shadow: inset 0px 0.9px 6px 0px black;
+		}
+		.actionbtn {
+			height: 48px;
+			width: 32px;
+			padding: 5px 25px;
+			float: left;
+			text-align: center;
+			color: #008fd1;
+			display: none;
+		}
+			.selectedactionbtn {
+				display: block;
+			}
+			a.encounterformitemprint {
+				background-image: url(../images/print2.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				padding: 16px 16px;
+				float: left;
+				background-size: 2.2em !important;
+			}
+			a.encounterformitememail {
+				background-image: url(../images/email.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				padding: 16px 15px;
+				float: left;
+				/* margin-left: 10px; */
+				background-size: 2.4em !important;
+				/* border-right: 1px solid #AAA */;
+			}
+			a.encounterformitemfax {
+				background-image: url(../images/printer_and_fax.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				padding: 16px 18px;
+				float: left;
+				background-size: 2.8em !important;
+			}
+
+	.cgpatientencounterformitem {
+		
+	}
+	.cgpatientencounterreasonwrapper {
+		height: 60px;
+		margin-bottom: 5px;
+		border-bottom: 2px solid #AAA;
+		
+		background: #eeeeee; /* Old browsers */
+		background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+		background: linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	}
+	.cgpatientencounterreasontitle {
+		height: 20px;
+		border-bottom: 1px solid #CCC;
+		padding: 3px;
+	}
+	.cgpatientencounterreasonholder {
+		width: 100%;
+		height: 30px;
+		overflow-y: scroll;
+		font-size: 0.8em !important;
+		/* padding: 3px; */
+	}
+	.cgpatientencounterreason {
+		height: 30px;
+		width: 100%;
+			
+	}
+	.cgpatientencounterformitemname {
+		height: 100%;
+		width: 100%;
+		font-size: 0.9em;
+		text-indent: 4px;
+		
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-topright: 5px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		
+		/* border-bottom: 1px solid #CCC; */
+	}
+	.cgpatientencounterformitemactions {
+		height: 40px;
+		width: 125px;
+		position: absolute;
+		display: none;
+		z-index: 10;
+		
+		background: #FFF;
+		border: 1px solid #DDD;
+		
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	div[id^="cgpatientdashboarditemencounter_"] .encounterformswrapper {
+		width: 251px;
+		height: 111px;
+		overflow: hidden;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+/* all form colors and images */
+	.vitals {
+		background-image: url(../images/encform_icon.png);
+		background-position: -151px -4px;
+	    background-size: 31em auto;
+	}
+	.vitalscg {
+		background-image: url(../images/encform_icon.png);
+		background-position: -149px -7px;
+	    background-size: 34em auto;
+	}
+	.hospitalistcg{
+		background-image: url(../images/hospitalist.png);
+		background-position: -2px -2px;
+	    background-size: 3em auto;
+	}
+	.handpcg {
+		background-image: url(../images/encform_icon.png);
+		background-position: -102px -6px;
+	    background-size: 34em auto;
+	}
+	.progress_note {
+		background-image: url(../images/encform_icon.png);
+		background-position: -11px -7px;
+		background-size: 34em auto;
+	}
+	.soap {
+		background-image: url(../images/encform_icon.png);
+		background-position: -58px -4px;
+		background-size: 31em auto;
+	}
+	.soapcg {
+		background-image: url(../images/encform_icon.png);
+		background-position: -57px -7px;
+		background-size: 34em auto;
+	}
+	.ros {
+		background-image: url(../images/encform_icon.png);
+		background-position: -188px -6px;
+		background-size: 33em auto;
+	}
+	.newpatient {
+		background-image: url(../images/encform_icon.png);
+		background-position: -233px -6px;
+	    background-size: 33em auto;
+	}
+	.cgencounterbillingform {
+		background-image: url(../images/encform_icon.png);
+		background-position: -324px -6px;
+		background-size: 33em auto;
+	}
+	.cgaddencounterform {
+		background-image: url(../images/encform_icon.png);
+		background-position: -279px -6px;
+		background-size: 33em auto;
+	}
+	
+	.anesthesia {
+		background-image: url(../images/encform_icon.png);
+		background-position: -416px -6px;
+		background-size: 33em auto;
+	}
+	.cgpatientencounterformitemwrapper {
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		margin: 2px;
+		border: 1px solid #E6E6E6;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		float: left;
+	}
+#thisencounterdatebar {
+	height: 30px;
+	width: auto;
+	padding-top: 5px;
+	display: none;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+	border: 1px solid #B3B3B3;
+	/* margin-left: 5px; */
+	
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+#cgencounteractions {
+	/* width: 170px; */
+	height: 30px;
+	width: auto;
+	padding-top: 5px;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+	border: 1px solid #B3B3B3;
+	/* margin-left: 5px; */
+	
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+#cgnewencounterforms {
+	-webkit-box-shadow: inset 0px 0.9px 6px 0px black;
+	box-shadow: inset 0px 0.9px 6px 0px black;
+	padding: 5px 15px;
+}
+#cgencounterslistviewrapper {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
